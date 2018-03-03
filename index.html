@@ -5,18 +5,64 @@
     <title>Frontendy.pl - BLOG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=latin-ext" rel="stylesheet">
   </head>
   <body>
-      <div class="container">
-          <div class="row">
-              <div class="col-5">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus nisi rem laboriosam quisquam, repudiandae molestiae laborum eaque dolorum voluptas animi iusto optio hic? Voluptate nostrum at modi dolorem, odit impedit expedita a inventore id iure quasi dolore voluptatum excepturi, eligendi aliquid qui dolorum! Odit nihil nesciunt quibusdam consequuntur illum itaque enim facilis labore illo placeat. Suscipit illo dolorum quisquam a inventore cumque impedit ipsa quia explicabo dignissimos natus sit perferendis, incidunt saepe possimus aliquam facere quam. Adipisci, accusantium expedita velit at quod repellendus omnis nam aliquid alias ipsum sunt quaerat tempore et tenetur, blanditiis perspiciatis ab, doloribus corrupti nulla facilis?
-              </div>
-              <div class="col-7">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, dolores? Soluta explicabo accusamus, assumenda, nulla ipsum ad necessitatibus dolores expedita nobis aspernatur quia ex. Illo molestias commodi, repellat quis, provident eaque, doloribus hic molestiae odio obcaecati nobis quaerat reprehenderit deserunt nam quo! Consequatur eos ullam earum at deserunt ipsum ut? Aspernatur quos reprehenderit aperiam, beatae veniam pariatur provident sequi, nisi eligendi porro magnam rerum dolorum eum inventore voluptatum iure officiis similique dignissimos. Aspernatur obcaecati voluptates, ipsa repellendus ipsam distinctio beatae accusamus laudantium maiores, magni mollitia tenetur debitis. Nam nihil quidem ab eligendi ipsam aliquam earum blanditiis molestiae voluptates suscipit, possimus quibusdam perferendis dignissimos soluta fuga! Dolores ea, at aperiam repellendus, pariatur corporis libero nemo porro, sunt tempora eius aut? Minus laudantium repellat accusantium? A dolorem adipisci ratione modi consectetur beatae quas. Nostrum, rerum eius temporibus asperiores omnis tenetur non reprehenderit animi voluptas! Blanditiis suscipit voluptates cum, ab mollitia facere saepe!
-              </div>
-          </div>
-      </div>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="header__main-text">Frontendy.pl - blog poświęcony technologiom frontendowym HTML CSS JS</h1>
+                    </div>
+                    <div class="col-auto">
+                        <a href="#" class="social-link">
+                            <svg class="social-link__icon" aria-labelledby="simpleicons-facebook-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-facebook-icon">Facebook</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg  class="social-link__icon" aria-labelledby="simpleicons-youtube-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title id="simpleicons-youtube-icon">YouTube</title><path class="a" d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>   
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom js-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="header__wrapper">
+                        <div class="col-2">
+                            <a href="index.html"><img src="src/img/logo.png" class="header__logo" alt="Logo"></a>
+                        </div>
+                        <div class="col-6 offset-4">
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li><a href="#" class="menu__link menu__link--active">Home</a></li>
+                                    <li><a href="#" class="menu__link">Blog</a></li>
+                                    <li><a href="#" class="menu__link">Video</a></li>
+                                    <li><a href="#" class="menu__link">O mnie</a></li>
+                                    <li><a href="#" class="menu__link">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <article class="article" style="text-align: justify">
+                        <img src="src/img/art.jpg" alt="">
+                        <h2>Tytuł artykułu</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae reprehenderit eaque quod molestias, quisquam tenetur eius voluptatibus ducimus, modi necessitatibus quia molestiae ullam delectus suscipit debitis magnam aperiam nemo pariatur blanditiis, recusandae laboriosam excepturi maiores deleniti ab! Quibusdam numquam, illo a ratione voluptas error sit esse neque nobis nemo iusto unde dolore facilis inventore vel est sed accusamus dicta velit perferendis doloribus eligendi? Adipisci quos mollitia commodi quia sed voluptates possimus ipsam nam cumque impedit rerum obcaecati, cupiditate itaque excepturi modi ducimus sunt deserunt magnam quasi iste eos alias. Distinctio similique incidunt repellat, accusantium in, sit aperiam deleniti delectus voluptatum ipsum placeat maxime. Sit fugit dolorem blanditiis dolores, officia fuga! Architecto dolor, laudantium voluptatibus sapiente quasi officiis distinctio? Totam obcaecati consectetur commodi earum dignissimos asperiores, doloremque facere modi perspiciatis saepe mollitia veritatis at itaque excepturi ullam quod aut atque! Commodi dicta eius tempora sequi error, repellat accusantium veritatis optio est enim id placeat quos deserunt reiciendis fuga quam. Dolorem dolores in perferendis, deleniti aliquid itaque labore, id aliquam possimus qui repellat non quae beatae ea veniam consequuntur? Mollitia ex eius beatae consequuntur, ab itaque. Nobis incidunt soluta minus repellendus, possimus minima aperiam eligendi laborum earum eveniet exercitationem! Facilis, suscipit assumenda.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consectetur, molestiae architecto necessitatibus voluptate ab laborum cum voluptas temporibus officiis modi eaque sit ullam. Dolor vitae ullam molestiae expedita. Eos ab molestiae itaque amet aspernatur fugit dolore maxime molestias ea quo. Harum, similique. Optio iusto ab corrupti expedita commodi alias debitis magni saepe sunt natus iste consequatur fuga amet voluptates pariatur, tempora delectus molestias rerum dolor veniam quisquam necessitatibus repellendus quam? Deserunt nobis aut, quaerat qui, quod eum mollitia commodi enim voluptates aliquam obcaecati praesentium expedita architecto eos tempore iure! Quaerat sequi tempora repellat iure culpa voluptates aut eos harum recusandae debitis pariatur numquam rem doloremque, necessitatibus asperiores esse quidem iste quod corrupti. Inventore pariatur optio similique obcaecati labore voluptates veniam, modi nulla iusto facilis nemo architecto accusamus! Aliquid est commodi harum quasi nostrum dicta? Odio dolorem quaerat nam aperiam id doloribus quidem voluptate facere repudiandae asperiores hic, aliquid facilis natus nisi molestias est sint fugiat quasi provident necessitatibus culpa. Quasi corporis nesciunt molestias distinctio commodi repellat, pariatur deleniti eaque. Molestias eos cupiditate nesciunt sunt accusamus sint voluptates iusto officiis ducimus, impedit facilis non, tempore soluta id qui ut. Harum quaerat odio ratione enim excepturi et esse voluptates suscipit, architecto id! Commodi vitae assumenda repudiandae aut sit blanditiis, non eum eligendi pariatur odio voluptatibus. Suscipit sunt accusamus mollitia quam consequuntur totam aut placeat eius quos earum, officiis, architecto vel voluptatem sapiente, esse veritatis recusandae porro. Inventore atque qui in maiores ipsam ipsa earum itaque doloremque veniam, blanditiis accusantium labore iusto ut illum modi provident molestiae dicta accusamus natus vero illo saepe. Cupiditate, provident reprehenderit voluptates repellendus culpa nihil praesentium eius explicabo, porro mollitia consequuntur dolores fugiat repellat, esse eligendi ad! Aliquid iusto, repellendus deleniti non nam impedit id. Quidem cum ab temporibus distinctio rerum eos incidunt maxime sunt saepe pariatur!</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="dist/bundle.js"></script>
   </body>
 </html>

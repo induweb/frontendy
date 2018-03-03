@@ -1,6 +1,8 @@
 
 // The font size set on the root html element.
 $base-font-size: 16px !default;
+$font-size-lower: 14px; 
+$font-size-higher: 18px;
 
 // The base line height determines the basic unit of vertical rhythm.
 $base-line-height: 24px !default;
@@ -10,7 +12,20 @@ $base-line-height: 24px !default;
 $base-unit: 'px' !default;
 
 // The default font family.
-$base-font-family: null !default;
+$base-font-family:  "Georgia" ,"Times New Roman", Times, serif !default;
+$second-font-family: 'Montserrat', sans-serif;
+
+//Sizes
+$size-1: 8px;
+$size-2: 16px;
+$size-3: 24px;
+$size-4: 32px;
+
+//Colors
+$color-main: #ed1e54;
+$color-nav: #000;
+$color-bg-top: #fdfdfd;
+$color-bg-bottom: #ffffff;
 
 // The font sizes for h1-h6.
 $h1-font-size: 2    * $base-font-size !default;

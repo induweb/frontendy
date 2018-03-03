@@ -1,7 +1,4 @@
 @import "base/variables";
 @import "base/normalize/normalize";
 @import "layout/grid";
-body {
-    background: green;
-    display: flex;
-}
+@import "layout/header";

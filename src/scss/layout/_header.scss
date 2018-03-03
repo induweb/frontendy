@@ -1,0 +1,99 @@
+.header {
+    height: 125px;
+    
+    &__top {
+        background-color: $color-bg-top;
+        color: $color-main;
+        border-top: 1px solid $color-main;
+    }
+
+    &__bottom {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+
+        &--fixed {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            background: $color-bg-bottom;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+    
+    &__main-text{
+        font-size: $font-size-lower;
+        line-height: 44px;
+        margin: 0;
+        letter-spacing: 0.5px;
+    }
+
+    &__logo {
+        width: 64px;
+        height: 64px;
+        box-shadow: 0 0 4px rgba(0,0,0, 0.2);
+    }
+}
+
+.menu {
+    &__list {
+        display:flex;
+        justify-content: space-between;
+        list-style: none;
+        text-transform: uppercase;
+        font-family: $second-font-family;
+        padding: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 10px;
+        color: $color-nav;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $color-main;
+            height: 3px;
+            width: 0;
+            transition: width .3s;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+    }
+
+}
+
+.social-link {
+    text-decoration: none;
+
+    & + & {
+        margin-left: $size-2;
+    }
+
+    &__icon {
+        width: 22px;
+        height: 22px;
+        margin-top: 10px;
+        fill: $color-main;
+        border-radius: 2px;
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

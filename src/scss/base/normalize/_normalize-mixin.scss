@@ -119,6 +119,10 @@
       }
     }
 
+    h1,h2,h3,h4,h5,h6,h7 {
+      font-family: $second-font-family
+    }
+
     @if $normalize-vertical-rhythm {
       h2 {
         @include normalize-font-size($h2-font-size);
@@ -390,6 +394,8 @@
      */
 
     img {
+      max-width: 100%;
+      vertical-align: middle;
       border-style: none;
     }
 
