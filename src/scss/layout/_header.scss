@@ -69,7 +69,7 @@
             transition: width .3s;
         }
 
-        &:hover::after {
+        &:hover::after, &--active::after {
             width: 100%;
         }
 

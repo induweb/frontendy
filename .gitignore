@@ -1,6 +1,2 @@
 # Dependency directory
 node_modules
-
-# dist
-dist/
-src/img/art.jpg
