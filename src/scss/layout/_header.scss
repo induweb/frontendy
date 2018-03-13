@@ -31,6 +31,9 @@
         line-height: 44px;
         margin: 0;
         letter-spacing: 0.5px;
+        @include media-breakpoint-down(sm) {
+            line-height: 22px;
+        }
     }
 
     &__logo {
@@ -87,7 +90,6 @@
     &__icon {
         width: 22px;
         height: 22px;
-        margin-top: 10px;
         fill: $color-main;
         border-radius: 2px;
         transition: opacity 0.2s;

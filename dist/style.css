@@ -486,6 +486,14 @@ template {
 [hidden] {
   display: none; }
 
+._ctr {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -1030,6 +1038,9 @@ html {
     line-height: 44px;
     margin: 0;
     letter-spacing: 0.5px; }
+    @media (max-width: 767.98px) {
+      .header__main-text {
+        line-height: 22px; } }
   .header__logo {
     width: 64px;
     height: 64px;
@@ -1071,7 +1082,6 @@ html {
   .social-link__icon {
     width: 22px;
     height: 22px;
-    margin-top: 10px;
     fill: #ed1e54;
     border-radius: 2px;
     transition: opacity 0.2s; }
