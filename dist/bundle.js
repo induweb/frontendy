@@ -99,11 +99,13 @@ var throttle = __webpack_require__(3);
 var Menu = function () {
 
     var Selectors = {
-        MENU: '.js-menu'
+        MENU: '.js-menu',
+        HAMBURGER: '.js-hamburger'
     };
 
     var ClassNames = {
-        FIXED_MENU: 'header__bottom--fixed'
+        FIXED_MENU: 'header__bottom--fixed',
+        ACTIVE_HAMBURGER: 'hamburger--active'
     };
 
     var Menu = function () {

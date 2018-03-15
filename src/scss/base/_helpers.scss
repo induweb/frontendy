@@ -3,3 +3,14 @@
     justify-content: center;
     align-items: center;
 }
+
+._fr {
+    float: right;
+}
+
+._vxs {
+    display: none;
+    @include media-breakpoint-down(sm) {
+        display: block;
+    }
+}

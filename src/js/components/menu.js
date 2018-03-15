@@ -2,11 +2,13 @@ const throttle = require('lodash.throttle');
 const Menu = (()=> {
 
     const Selectors = {
-        MENU: '.js-menu'
+        MENU: '.js-menu',
+        HAMBURGER: '.js-hamburger'
     };
 
     const ClassNames = {
-        FIXED_MENU: 'header__bottom--fixed'
+        FIXED_MENU: 'header__bottom--fixed',
+        ACTIVE_HAMBURGER: 'hamburger--active'
     }
 
     class Menu {
