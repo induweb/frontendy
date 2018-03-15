@@ -99,12 +99,14 @@ var throttle = __webpack_require__(3);
 var Menu = function () {
 
     var Selectors = {
-        MENU: '.js-menu',
+        MENU: '.js-sticky',
+        MENU_LIST: '.js-menu',
         HAMBURGER: '.js-hamburger'
     };
 
     var ClassNames = {
         FIXED_MENU: 'header__bottom--fixed',
+        ACTIVE_MENU: 'menu--active',
         ACTIVE_HAMBURGER: 'hamburger--active'
     };
 
@@ -113,6 +115,8 @@ var Menu = function () {
             _classCallCheck(this, Menu);
 
             this.element = element;
+            this.menuList = element.querySelector(Selectors.MENU_LIST);
+            this.hamburger = element.querySelector(Selectors.HAMBURGER);
             this.offset = element.offsetTop;
             this.addEvents();
         }
@@ -127,9 +131,16 @@ var Menu = function () {
                 }
             }
         }, {
+            key: 'clickHandler',
+            value: function clickHandler() {
+                this.hamburger.classList.toggle(ClassNames.ACTIVE_HAMBURGER);
+                this.menuList.classList.toggle(ClassNames.ACTIVE_MENU);
+            }
+        }, {
             key: 'addEvents',
             value: function addEvents() {
                 window.addEventListener('scroll', throttle(this.scrollHandler.bind(this), 50));
+                this.hamburger.addEventListener('click', this.clickHandler.bind(this));
             }
         }]);
 
